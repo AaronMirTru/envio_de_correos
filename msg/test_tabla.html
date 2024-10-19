@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con barra de desplazamiento</title>
+    <style>
+        /* Estilos para el contenedor de la tabla */
+        .table-container {
+            width: 100%;  /* Ancho de la tabla */
+            height: 300px;  /* Altura fija */
+            overflow-y: auto;  /* Habilitar barra de desplazamiento vertical */
+            border: 1px solid #ccc;  /* Borde del contenedor */
+        }
+
+        /* Estilos para la tabla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;  /* Bordes de la tabla */
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;  /* Color de fondo del encabezado */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tabla con barra de desplazamiento vertical</h1>
+
+<!-- Contenedor con barra de desplazamiento -->
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rellenar con muchas filas para que la tabla sea más larga -->
+            <tr>
+                <td>Juan</td>
+                <td>28</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>22</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td>Luis</td>
+                <td>35</td>
+                <td>Valencia</td>
+            </tr>
+            <!-- Puedes agregar más filas aquí para hacer la tabla más larga -->
+            <tr>
+                <td>Pedro</td>
+                <td>30</td>
+                <td>Sevilla</td>
+            </tr>
+            <tr>
+                <td>Lucia</td>
+                <td>25</td>
+                <td>Bilbao</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>40</td>
+                <td>Zaragoza</td>
+            </tr>
+            <tr>
+                <td>Miguel</td>
+                <td>29</td>
+                <td>Valencia</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>31</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>Jose</td>
+                <td>27</td>
+                <td>Alicante</td>
+            </tr>
+            <tr>
+                <td>Eva</td>
+                <td>26</td>
+                <td>Granada</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

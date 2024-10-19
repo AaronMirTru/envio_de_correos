@@ -1,0 +1,976 @@
+
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>correo bajas y rechazos </title>
+                        
+    <style>
+        .table-container {
+            width: 100%;
+            height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    
+                    </head>
+                    <body>
+                        <p>['administracio@deltahotel.net', 'anafiol@afcasagran.com', 'asesorenergetico.gnf@gmail.com', 'cadenat@cadenat.com', 'consultores@cyapc.com', 'copeteymanzano@gmail.com', 'cpsegria16@gmail.com', 'deltebre@tortacastello.com', 'facturacio@fincatassim.es', 'falso@falso.com', 'fincas.samar@gmail.com', 'noemi@gestiovertical.cat']</p>
+                        <p>Buenas tardes,</p>
+                        <p>adjunto las bajas recibidas:</p>
+
+                        <div class="table_container">
+                            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>titular</th>
+      <th>contacto</th>
+      <th>cups</th>
+      <th>consumo_sips</th>
+      <th>canal</th>
+      <th>agente</th>
+      <th>fecha_activacion</th>
+      <th>fecha_de_baja</th>
+      <th>dias</th>
+      <th>motivo</th>
+      <th>contact_email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DELTA HOTEL RESTAURACION SL</td>
+      <td>3.0TD</td>
+      <td>ES0031405830337001HX</td>
+      <td>138476</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>administracio@deltahotel.net</td>
+    </tr>
+    <tr>
+      <td>COMUNIDAD DE PROPIETARIOS</td>
+      <td>2.0TD</td>
+      <td>ES0031406193670001SD</td>
+      <td>1567</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-01 00:00:00</td>
+      <td>2023-03-01 00:00:00</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP LA SAL</td>
+      <td>2.0TD</td>
+      <td>ES0031406183656006ZF</td>
+      <td>3399</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031406195068001DT</td>
+      <td>858</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031408102091002HN</td>
+      <td>553</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031408102096002MK</td>
+      <td>751</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031408102094001XK</td>
+      <td>682</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031408102107001RA</td>
+      <td>945</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031406195069004YZ</td>
+      <td>970</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031406234110001HY</td>
+      <td>1092</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031406234111001SV</td>
+      <td>941</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031406234112004JP</td>
+      <td>959</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031408219057005NK</td>
+      <td>648</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031408219059005FC</td>
+      <td>969</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031408219060005MP</td>
+      <td>630</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031408102104002PV</td>
+      <td>1382</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRAVESSERA SANT BARTOMEU 2</td>
+      <td>2.0TD</td>
+      <td>ES0031406244389001HF</td>
+      <td>14618</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ENRIC PUBILL 11</td>
+      <td>2.0TD</td>
+      <td>ES0031406183888002GW</td>
+      <td>2881</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP RESIDENECIAL ALCOR 12</td>
+      <td>2.0TD</td>
+      <td>ES0031408062078003LK</td>
+      <td>3570</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP AV SANT RUF 48</td>
+      <td>2.0TD</td>
+      <td>ES0031408034259003EG</td>
+      <td>5098</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP AV SANT RUF 48</td>
+      <td>2.0TD</td>
+      <td>ES0031408034259001EW</td>
+      <td>4909</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CORREGIDOR ESCOFET 86 PK</td>
+      <td>2.0TD</td>
+      <td>ES0031408100991001DD</td>
+      <td>12088</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP PINTOR XAVIER GOSE 13</td>
+      <td>2.0TD</td>
+      <td>ES0031406230834001EB</td>
+      <td>7612</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP AV GUILLE DE ROSSELLO</td>
+      <td>2.0TD</td>
+      <td>ES0031408196966003ZJ</td>
+      <td>4132</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP SEGRIA 16</td>
+      <td>3.0TD</td>
+      <td>ES0031406179165006TX</td>
+      <td>3039</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cpsegria16@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP PARDINYES BAIXES</td>
+      <td>2.0TD</td>
+      <td>ES0031408254291001XH</td>
+      <td>825</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP PK DE LA DIPOSITS 5</td>
+      <td>2.0TD</td>
+      <td>ES0031408414257005SX</td>
+      <td>1279</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP PK DE LA DIPOSITS 5</td>
+      <td>3.0TD</td>
+      <td>ES0031408414257002SF</td>
+      <td>2813</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP PK DE LA DIPOSITS 5</td>
+      <td>3.0TD</td>
+      <td>ES0031408414259001XM</td>
+      <td>3796</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CR CORREGIDOR ESCOFET 64</td>
+      <td>3.0TD</td>
+      <td>ES0031408430407001EG</td>
+      <td>6690</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CR CORREGIDOR ESCOFET 64</td>
+      <td>3.0TD</td>
+      <td>ES0031408430407003EY</td>
+      <td>3819</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CR CORREGIDOR ESCOFET 64</td>
+      <td>3.0TD</td>
+      <td>ES0031408430406002RV</td>
+      <td>3512</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CR CORREGIDOR ESCOFET 64</td>
+      <td>3.0TD</td>
+      <td>ES0031408430404002YH</td>
+      <td>3212</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CORREGIDOR ESCOFET 80</td>
+      <td>2.0TD</td>
+      <td>ES0031408100989003ZN</td>
+      <td>8136</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CORREGIDOR ESCOFET 84</td>
+      <td>2.0TD</td>
+      <td>ES0031408100991003DB</td>
+      <td>6018</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>asesorenergetico.gnf@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CORREGIDOR ESCOFET 86</td>
+      <td>2.0TD</td>
+      <td>ES0031408100992003YE</td>
+      <td>7071</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CORREGIDOR ESCOFET 82</td>
+      <td>2.0TD</td>
+      <td>ES0031408100990003NT</td>
+      <td>5344</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>cadenat@cadenat.com</td>
+    </tr>
+    <tr>
+      <td>CCPP LEOPOLDO SEGARRA 1</td>
+      <td>2.0TD</td>
+      <td>ES0232000000017606DZ</td>
+      <td>91</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>396</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRINQUET ES A</td>
+      <td>2.0TD</td>
+      <td>ES0232000000018855VK</td>
+      <td>1462</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>362</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TRINQUET ES B</td>
+      <td>2.0TD</td>
+      <td>ES0232000000018857HT</td>
+      <td>1405</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>396</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TARRAGONA 7</td>
+      <td>2.0TD</td>
+      <td>ES0031408269948001HK</td>
+      <td>429</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>367</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ROBERT GRAUPERA 219</td>
+      <td>2.0TD</td>
+      <td>ES0232000000032514JH</td>
+      <td>2575</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>347</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ED NEPTUNO</td>
+      <td>2.0TD</td>
+      <td>ES0232000000031196WB</td>
+      <td>2707</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>364</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ED NEPTUNO</td>
+      <td>2.0TD</td>
+      <td>ES0232000000031197WN</td>
+      <td>677</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>364</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP SANT JOAN</td>
+      <td>2.0TD</td>
+      <td>ES0232000000031107KZ</td>
+      <td>1526</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>224</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ED PL 20 DE MAIG</td>
+      <td>2.0TD</td>
+      <td>ES0232000000031703RN</td>
+      <td>1804</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>451</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ED UNION</td>
+      <td>2.0TD</td>
+      <td>ES0232000000201127FH</td>
+      <td>2131</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>446</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP JARDINES DEL DELTA</td>
+      <td>2.0TD</td>
+      <td>ES0232000000201635YC</td>
+      <td>513</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>395</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP MESTRE FELIX GARCIA 7</td>
+      <td>2.0TD</td>
+      <td>ES0232000000032018SM</td>
+      <td>2195</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>452</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP RIBERA D'EBRE 6-8</td>
+      <td>2.0TD</td>
+      <td>ES0232008602676002JN</td>
+      <td>7244</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>59</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP AV GOLES DE L'EBRE 43</td>
+      <td>2.0TD</td>
+      <td>ES0232000000018491WW</td>
+      <td>223</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>2023-03-17 00:00:00</td>
+      <td>395</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP RIOMAR</td>
+      <td>2.0TD</td>
+      <td>ES0031405722111009HN</td>
+      <td>382</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-07 00:00:00</td>
+      <td>2023-03-07 00:00:00</td>
+      <td>406</td>
+      <td>NaN</td>
+      <td>deltebre@tortacastello.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EDF. BARCELONA</td>
+      <td>2.0TD</td>
+      <td>ES0031406265031001JJ</td>
+      <td>1265</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>263</td>
+      <td>NaN</td>
+      <td>falso@falso.com</td>
+    </tr>
+    <tr>
+      <td>BC POBLE NOU CB</td>
+      <td>2.0TD</td>
+      <td>ES0031405469643004JV</td>
+      <td>3227</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>noemi@gestiovertical.cat</td>
+    </tr>
+    <tr>
+      <td>BC POBLE NOU CB</td>
+      <td>2.0TD</td>
+      <td>ES0031405469643010ZT</td>
+      <td>1593</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>32</td>
+      <td>NaN</td>
+      <td>noemi@gestiovertical.cat</td>
+    </tr>
+    <tr>
+      <td>BC POBLE NOU CB</td>
+      <td>2.0TD</td>
+      <td>ES0031405469643012ZW</td>
+      <td>1206</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>noemi@gestiovertical.cat</td>
+    </tr>
+    <tr>
+      <td>CCPP DEL PS ARBRES 28</td>
+      <td>2.0TD</td>
+      <td>ES0031405483275001EY</td>
+      <td>4456</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>18</td>
+      <td>NaN</td>
+      <td>noemi@gestiovertical.cat</td>
+    </tr>
+    <tr>
+      <td>CCPP PSG ARBRES</td>
+      <td>2.0TD</td>
+      <td>ES0031405483275003EP</td>
+      <td>1768</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>18</td>
+      <td>NaN</td>
+      <td>noemi@gestiovertical.cat</td>
+    </tr>
+    <tr>
+      <td>CCPP TARONGETA 12 14</td>
+      <td>2.0TD</td>
+      <td>ES0031408306678016VW</td>
+      <td>2013</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>anafiol@afcasagran.com</td>
+    </tr>
+    <tr>
+      <td>CCPP TARONGETA 12 14</td>
+      <td>2.0TD</td>
+      <td>ES0031408306678001QX</td>
+      <td>669</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>anafiol@afcasagran.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EDIFICI LA PASTORA MAR</td>
+      <td>2.0TD</td>
+      <td>ES0031408307399007SN</td>
+      <td>10739</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>2023-03-18 00:00:00</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>anafiol@afcasagran.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CRISTOBAL PEREZ PASTOR 38</td>
+      <td>2.0TD</td>
+      <td>ES0021000012946202RM</td>
+      <td>2430</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-04-20 00:00:00</td>
+      <td>2023-04-20 00:00:00</td>
+      <td>253</td>
+      <td>NaN</td>
+      <td>copeteymanzano@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CRISTOBAL PEREZ PASTOR 38</td>
+      <td>2.0TD</td>
+      <td>ES0021000012946204RF</td>
+      <td>2994</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-04-20 00:00:00</td>
+      <td>2023-04-20 00:00:00</td>
+      <td>253</td>
+      <td>NaN</td>
+      <td>copeteymanzano@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EDUARDO GARCIA DEL RIO 33</td>
+      <td>2.0TD</td>
+      <td>ES0027700030581003PH</td>
+      <td>1976</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-05-04 00:00:00</td>
+      <td>2023-05-04 00:00:00</td>
+      <td>205</td>
+      <td>NaN</td>
+      <td>consultores@cyapc.com</td>
+    </tr>
+    <tr>
+      <td>CCPP FERNANDEZ VALLEJO 29</td>
+      <td>2.0TD</td>
+      <td>ES0027700244432002JF</td>
+      <td>79</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-07-12 00:00:00</td>
+      <td>2023-07-12 00:00:00</td>
+      <td>328</td>
+      <td>NaN</td>
+      <td>fincas.samar@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP JOSE Mª PEREDA 3</td>
+      <td>2.0TD</td>
+      <td>ES0027700245968004GT</td>
+      <td>639</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-07-12 00:00:00</td>
+      <td>2023-07-12 00:00:00</td>
+      <td>328</td>
+      <td>NaN</td>
+      <td>fincas.samar@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CONSOLACION 2-4</td>
+      <td>2.0TD</td>
+      <td>ES0027700245543002VS</td>
+      <td>1836</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-07-12 00:00:00</td>
+      <td>2023-07-12 00:00:00</td>
+      <td>328</td>
+      <td>NaN</td>
+      <td>fincas.samar@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP URB ACACIO</td>
+      <td>2.0TD</td>
+      <td>ES0027700239920006YJ</td>
+      <td>497</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-07-12 00:00:00</td>
+      <td>2023-07-12 00:00:00</td>
+      <td>321</td>
+      <td>NaN</td>
+      <td>fincas.samar@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP PSG.TERRAPLE 75</td>
+      <td>3.0TD</td>
+      <td>ES0031408089918001XZ</td>
+      <td>5423</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>2023-06-23 00:00:00</td>
+      <td>2023-06-23 00:00:00</td>
+      <td>261</td>
+      <td>NaN</td>
+      <td>facturacio@fincatassim.es</td>
+    </tr>
+  </tbody>
+</table>       
+                        </div>
+
+                        <p>Para poder realizar las recuperaciones hay dos opcioens que detallo a continuación</p>
+
+                            <p>- Desestimar el contrato que ha firmado en la otra comercializadora.</p>
+                            <p>- Que el cliente firme el anexo de reposición que adjunto. En caso de firmar la plantilla, se tendrá que enviar por correo a canales@alumbraenergia.es correctamente cumplimentada y firmada por el cliente.</p>
+
+                        <p>Tenemos de plazo 14 días para realizar las recuperaciones desde el día en el que se han dado de baja.</p>
+
+                        <p>Según Disitribuidora este sumiministro tiene una solicitud de cambio de comercializadora en curso y hasta que no finalice no podemos solicitar el cambio a Alumbra.</p>
+
+                        <p>Un saludo.</p>
+                        <a href="https://alumbraenergia.es/">
+                        <img src="cid:mi_imagen" alt="IMAGEN_ALUMBRA_CARMEN">
+                        </a>
+                    </body>
+                    </html>
+    
