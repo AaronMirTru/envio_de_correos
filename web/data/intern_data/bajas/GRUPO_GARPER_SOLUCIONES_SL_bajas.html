@@ -1,0 +1,661 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>correo bajas y rechazos </title>
+                            
+        <style>
+            .table-container {
+                width: 100%;
+                height: 200px;
+                overflow-y: auto;
+                border: 1px solid #ccc;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+        
+                        </head>
+                        <body>
+                            <p>Buenas tardes,</p>
+                            <p>adjunto las bajas recibidas:</p>
+
+                            <div class="table_container">
+                                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>titular</th>
+      <th>contacto</th>
+      <th>cups</th>
+      <th>consumo_sips</th>
+      <th>canal</th>
+      <th>agente</th>
+      <th>fecha_activacion</th>
+      <th>fecha_de_baja</th>
+      <th>dias</th>
+      <th>motivo</th>
+      <th>contact_email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JAYOFEL SL</td>
+      <td>2.0TD</td>
+      <td>ES0031607198505001PJ</td>
+      <td>3416</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2023-07-01 00:00:00</td>
+      <td>2023-07-01 00:00:00</td>
+      <td>236</td>
+      <td>NaN</td>
+      <td>jayofelcofradia@gmail.com</td>
+    </tr>
+    <tr>
+      <td>ALCIBIADES DEMETRIO GUTIERREZ ESTEVEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031601061662008ET</td>
+      <td>2111</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2023-09-08 00:00:00</td>
+      <td>2023-09-08 00:00:00</td>
+      <td>354</td>
+      <td>NaN</td>
+      <td>francis_3334@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>JOSE OLIVER PERERA HERNANDEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031601069295086GE</td>
+      <td>2174</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>362</td>
+      <td>NaN</td>
+      <td>olitegueste@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EDIFICIO LA PERLA</td>
+      <td>2.0TD</td>
+      <td>ES0031607512772021KR</td>
+      <td>1155</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2023-08-05 00:00:00</td>
+      <td>2023-08-05 00:00:00</td>
+      <td>355</td>
+      <td>NaN</td>
+      <td>raquel@simancasrivas.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EDIFICIO LA PERLA</td>
+      <td>2.0TD</td>
+      <td>ES0031607512772026KY</td>
+      <td>765</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2023-08-05 00:00:00</td>
+      <td>2023-08-05 00:00:00</td>
+      <td>355</td>
+      <td>NaN</td>
+      <td>raquel@simancasrivas.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EDIFICIO LA PERLA</td>
+      <td>2.0TD</td>
+      <td>ES0031607512772030KX</td>
+      <td>578</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2023-08-05 00:00:00</td>
+      <td>2023-08-05 00:00:00</td>
+      <td>355</td>
+      <td>NaN</td>
+      <td>raquel@simancasrivas.com</td>
+    </tr>
+    <tr>
+      <td>COMUNIDAD PROPIETARIOS EDIF COSTA AZUL</td>
+      <td>2.0TD</td>
+      <td>ES0031607512787036YC</td>
+      <td>469</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2023-08-05 00:00:00</td>
+      <td>2023-08-05 00:00:00</td>
+      <td>355</td>
+      <td>NaN</td>
+      <td>raquel@simancasrivas.com</td>
+    </tr>
+    <tr>
+      <td>CDAD PROP EDIFICIO GRAN DUQUE 35</td>
+      <td>2.0TD</td>
+      <td>ES0031601368938010EG</td>
+      <td>2347</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2023-08-18 00:00:00</td>
+      <td>2023-08-18 00:00:00</td>
+      <td>342</td>
+      <td>NaN</td>
+      <td>contabilidad@simancasrivas.com</td>
+    </tr>
+    <tr>
+      <td>CDAD PROP LAS ABUELAS</td>
+      <td>2.0TD</td>
+      <td>ES0031601214716001EX</td>
+      <td>469</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2023-08-18 00:00:00</td>
+      <td>2023-08-18 00:00:00</td>
+      <td>342</td>
+      <td>NaN</td>
+      <td>contabilidad@simancasrivas.com</td>
+    </tr>
+    <tr>
+      <td>CDAD PROP EDF. ACAYMO</td>
+      <td>2.0TD</td>
+      <td>ES0031601029414001ZV</td>
+      <td>353</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2023-08-18 00:00:00</td>
+      <td>2023-08-18 00:00:00</td>
+      <td>342</td>
+      <td>NaN</td>
+      <td>contabilidad@simancasrivas.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EDIFICIO COLON</td>
+      <td>2.0TD</td>
+      <td>ES0031601010349001KQ</td>
+      <td>1531</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-03-13 00:00:00</td>
+      <td>2024-03-13 00:00:00</td>
+      <td>163</td>
+      <td>NaN</td>
+      <td>contabilidad@simancasrivas.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EDIFICIO COLON</td>
+      <td>2.0TD</td>
+      <td>ES0031601010349044TJ</td>
+      <td>1430</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-03-13 00:00:00</td>
+      <td>2024-03-13 00:00:00</td>
+      <td>163</td>
+      <td>NaN</td>
+      <td>contabilidad@simancasrivas.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EDIFICIO COLON</td>
+      <td>2.0TD</td>
+      <td>ES0031601010349046TS</td>
+      <td>1810</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-03-13 00:00:00</td>
+      <td>2024-03-13 00:00:00</td>
+      <td>163</td>
+      <td>NaN</td>
+      <td>contabilidad@simancasrivas.com</td>
+    </tr>
+    <tr>
+      <td>MISAEL ABRAHAM GARCIA RAMOS</td>
+      <td>2.0TD</td>
+      <td>ES0031601173009003VQ</td>
+      <td>2640</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-05-02 00:00:00</td>
+      <td>2024-05-02 00:00:00</td>
+      <td>67</td>
+      <td>NaN</td>
+      <td>olorun357@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MISAEL ABRAHAM GARCIA RAMOS</td>
+      <td>2.0TD</td>
+      <td>ES0031607251781001AD</td>
+      <td>5087</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-11 00:00:00</td>
+      <td>2024-04-11 00:00:00</td>
+      <td>88</td>
+      <td>NaN</td>
+      <td>olorun357@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARIA NELIDA MEDEROS JIMENEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031601155888004KX</td>
+      <td>2128</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARIA NELIDA MEDEROS JIMENEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031607535470005MK</td>
+      <td>2581</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARIA NELIDA MEDEROS JIMENEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031601155888007KJ</td>
+      <td>651</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARGOT MEDEROS JIMENEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031607535470001MV</td>
+      <td>1054</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARGOT MEDEROS JIMENEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031601155888005KB</td>
+      <td>1216</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARIA PILAR MEDEROS JIMENEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031607535471002AY</td>
+      <td>1620</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARIA PILAR MEDEROS JIMENEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031607535470002MH</td>
+      <td>1218</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARIA PILAR MEDEROS JIMENEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031601155888003KD</td>
+      <td>198</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>PILAR JIMENEZ DE LEON</td>
+      <td>2.0TD</td>
+      <td>ES0031607196644002DJ</td>
+      <td>2671</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>182</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>PILAR JIMENEZ DE LEON</td>
+      <td>2.0TD</td>
+      <td>ES0031607196288002XF</td>
+      <td>2096</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>PILAR JIMENEZ DE LEON</td>
+      <td>2.0TD</td>
+      <td>ES0031607196288003XP</td>
+      <td>4295</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>PILAR JIMENEZ DE LEON</td>
+      <td>2.0TD</td>
+      <td>ES0031607196288004XD</td>
+      <td>2291</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>PILAR JIMENEZ DE LEON</td>
+      <td>2.0TD</td>
+      <td>ES0031607196288005XX</td>
+      <td>1432</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>182</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>PILAR JIMENEZ DE LEON</td>
+      <td>2.0TD</td>
+      <td>ES0031607196288006XB</td>
+      <td>6822</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>PILAR JIMENEZ DE LEON</td>
+      <td>2.0TD</td>
+      <td>ES0031601155888002KP</td>
+      <td>1214</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-03 00:00:00</td>
+      <td>2024-04-03 00:00:00</td>
+      <td>188</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>PILAR JIMENEZ DE LEON</td>
+      <td>2.0TD</td>
+      <td>ES0031607196288008XJ</td>
+      <td>2284</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>181</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CDAD PROP EDI PILAR JIMENEZ LEON</td>
+      <td>2.0TD</td>
+      <td>ES0031607535470003ML</td>
+      <td>436</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-05 00:00:00</td>
+      <td>2024-04-05 00:00:00</td>
+      <td>185</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CDAD PROP EDI PEDRO MEDEROS GONZALEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031601155888001KF</td>
+      <td>266</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>180</td>
+      <td>NaN</td>
+      <td>santi48gigante@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARIA DEL CARMEN SIMON TABARES</td>
+      <td>2.0TD</td>
+      <td>ES0021000002386613ZS</td>
+      <td>1598</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-16 00:00:00</td>
+      <td>2024-04-16 00:00:00</td>
+      <td>168</td>
+      <td>NaN</td>
+      <td>kuchyg@yahoo.es</td>
+    </tr>
+    <tr>
+      <td>BORJA JAEL GONZALEZ NAVARRO</td>
+      <td>2.0TD</td>
+      <td>ES0031607331214007RP</td>
+      <td>3637</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-18 00:00:00</td>
+      <td>2024-04-18 00:00:00</td>
+      <td>126</td>
+      <td>NaN</td>
+      <td>borjagn@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MISAEL ABRAHAM GARCIA RAMOS</td>
+      <td>2.0TD</td>
+      <td>ES0031607592571001ZK</td>
+      <td>27</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-05-09 00:00:00</td>
+      <td>2024-05-09 00:00:00</td>
+      <td>60</td>
+      <td>NaN</td>
+      <td>olorun357@gmail.com</td>
+    </tr>
+    <tr>
+      <td>VICTOR MANUEL ALVAREZ SANTANA</td>
+      <td>2.0TD</td>
+      <td>ES0031607279552001FG</td>
+      <td>427</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-30 00:00:00</td>
+      <td>2024-04-30 00:00:00</td>
+      <td>142</td>
+      <td>NaN</td>
+      <td>bmtenerife.mari@gmail.com</td>
+    </tr>
+    <tr>
+      <td>ISUMY YENAY ENRIQUEZ BARAZARTE</td>
+      <td>2.0TD</td>
+      <td>ES0031601101794007LN</td>
+      <td>3079</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-04-30 00:00:00</td>
+      <td>2024-04-30 00:00:00</td>
+      <td>150</td>
+      <td>NaN</td>
+      <td>isumyyenay@gmail.com</td>
+    </tr>
+    <tr>
+      <td>JÓNATHAN GARCÍA PÉREZ</td>
+      <td>2.0TD</td>
+      <td>ES0031607438417001MW</td>
+      <td>22924</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-11-30 00:00:00</td>
+      <td>2024-11-30 00:00:00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>tonigod3@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Jennifer Lopez Felipe</td>
+      <td>2.0TD</td>
+      <td>ES0031601112723020ZT</td>
+      <td>2381</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-05-14 00:00:00</td>
+      <td>2024-05-14 00:00:00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>yeraadrian@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>Jennifer Lopez Felipe</td>
+      <td>2.0TD</td>
+      <td>ES0031607528757001YG</td>
+      <td>311</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-05-14 00:00:00</td>
+      <td>2024-05-14 00:00:00</td>
+      <td>143</td>
+      <td>NaN</td>
+      <td>yeraadrian@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>MERCEDEZ MORALES LUNA</td>
+      <td>2.0TD</td>
+      <td>ES0031101311801015DM</td>
+      <td>1147</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-05-28 00:00:00</td>
+      <td>2024-05-28 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>facturaceni@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CDAD PROP. EL CALLEJON DE LA LAGUNA</td>
+      <td>2.0TD</td>
+      <td>ES0031607239539011PE</td>
+      <td>187</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-05-28 00:00:00</td>
+      <td>2024-05-28 00:00:00</td>
+      <td>132</td>
+      <td>NaN</td>
+      <td>ignaciomelo@yahoo.es</td>
+    </tr>
+    <tr>
+      <td>ALBERTO GARCIA PARRA</td>
+      <td>2.0TD</td>
+      <td>ES0031102135727062NL</td>
+      <td>16216</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-09-19 00:00:00</td>
+      <td>2024-09-19 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>stellagutierrezcordero26@gmail.com</td>
+    </tr>
+    <tr>
+      <td>GREGORIO FERMIN PEREZ RODRIGUEZ</td>
+      <td>2.0TD</td>
+      <td>ES0031601177117020DA</td>
+      <td>2040</td>
+      <td>GRUPO GARPER SOLUCIONES SL</td>
+      <td>ALMUDENA PERERA HERNANDEZ</td>
+      <td>2024-06-04 00:00:00</td>
+      <td>2024-06-04 00:00:00</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>goyo7791@hotmail.com</td>
+    </tr>
+  </tbody>
+</table>       
+                            </div>
+
+                            <p>Para poder realizar las recuperaciones hay dos opcioens que detallo a continuación</p>
+
+                                <p>- Desestimar el contrato que ha firmado en la otra comercializadora.</p>
+                                <p>- Que el cliente firme el anexo de reposición que adjunto. En caso de firmar la plantilla, se tendrá que enviar por correo a canales@alumbraenergia.es correctamente cumplimentada y firmada por el cliente.</p>
+
+                            <p>Tenemos de plazo 14 días para realizar las recuperaciones desde el día en el que se han dado de baja.</p>
+
+                            <p>Un saludo.</p>
+                            <a href="https://alumbraenergia.es/">
+                            <img src="cid:mi_imagen" alt="IMAGEN_ALUMBRA_CARMEN">
+                            </a>
+                        </body>
+                        </html>
+        

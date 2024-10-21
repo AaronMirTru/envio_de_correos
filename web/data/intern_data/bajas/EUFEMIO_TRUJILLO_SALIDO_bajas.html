@@ -1,0 +1,609 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>correo bajas y rechazos </title>
+                            
+        <style>
+            .table-container {
+                width: 100%;
+                height: 200px;
+                overflow-y: auto;
+                border: 1px solid #ccc;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+        
+                        </head>
+                        <body>
+                            <p>Buenas tardes,</p>
+                            <p>adjunto las bajas recibidas:</p>
+
+                            <div class="table_container">
+                                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>titular</th>
+      <th>contacto</th>
+      <th>cups</th>
+      <th>consumo_sips</th>
+      <th>canal</th>
+      <th>agente</th>
+      <th>fecha_activacion</th>
+      <th>fecha_de_baja</th>
+      <th>dias</th>
+      <th>motivo</th>
+      <th>contact_email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CCPP PARE SOLER 6</td>
+      <td>2.0TD</td>
+      <td>ES0031406191531001GD</td>
+      <td>2860</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CC. PROPOETARIOS</td>
+      <td>2.0TD</td>
+      <td>ES0031405580999011XY</td>
+      <td>264</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP SEGRIA 17</td>
+      <td>2.0TD</td>
+      <td>ES0031406189435002TT</td>
+      <td>1684</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP SEGRIA 17</td>
+      <td>2.0TD</td>
+      <td>ES0031406189435001EE</td>
+      <td>441</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ALCALDE PUJOL 7</td>
+      <td>2.0TD</td>
+      <td>ES0031406190542001ZD</td>
+      <td>5415</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ALCALDE PUJOL 7</td>
+      <td>2.0TD</td>
+      <td>ES0031406190545001YL</td>
+      <td>4507</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ALCALDE PUJOL 7</td>
+      <td>2.0TD</td>
+      <td>ES0031406190545002YC</td>
+      <td>1484</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ALMIRALL FOLCH</td>
+      <td>2.0TD</td>
+      <td>ES0031406186978001PC</td>
+      <td>2354</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP CIUTADELLA 25</td>
+      <td>2.0TD</td>
+      <td>ES0031406187530003LE</td>
+      <td>1466</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP CIUTADELLA 25</td>
+      <td>2.0TD</td>
+      <td>ES0031406187530002LK</td>
+      <td>2089</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ALCALDE ROVIRA ROURE 19</td>
+      <td>2.0TD</td>
+      <td>ES0031406189540001BG</td>
+      <td>8635</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP LES ROSES 33</td>
+      <td>2.0TD</td>
+      <td>ES0031405839596003ZV</td>
+      <td>201</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP LES ROSES 33</td>
+      <td>2.0TD</td>
+      <td>ES0031405839596001ZS</td>
+      <td>4564</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>COMUN PROP PARKING</td>
+      <td>2.0TD</td>
+      <td>ES0031406191127014BV</td>
+      <td>5804</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP URB MIRANDA</td>
+      <td>2.0TD</td>
+      <td>ES0031406187261001PM</td>
+      <td>5143</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ALCALDE PORQUERES</td>
+      <td>2.0TD</td>
+      <td>ES0031406182925001VB</td>
+      <td>2647</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>asesorenergetico.gnf@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ARTIES FASE IC</td>
+      <td>2.0TD</td>
+      <td>ES0031405886505003BB</td>
+      <td>2194</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ARTIES FASE IC</td>
+      <td>2.0TD</td>
+      <td>ES0031405886505002BX</td>
+      <td>210</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP AV MADRID 25 27</td>
+      <td>3.0TD</td>
+      <td>ES0031405912137025MM</td>
+      <td>13301</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP PRONCEP DE VIANA 38</td>
+      <td>2.0TD</td>
+      <td>ES0031406183679001WW</td>
+      <td>4379</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>asesorenergetico.gnf@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP PRONCEP DE VIANA 38</td>
+      <td>2.0TD</td>
+      <td>ES0031406183679002WA</td>
+      <td>172</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>asesorenergetico.gnf@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ARTIES FASE IC</td>
+      <td>2.0TD</td>
+      <td>ES0031405888692004QB</td>
+      <td>144</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>COMUN PROPIETARIOS PAER CASANOVAS 19</td>
+      <td>2.0TD</td>
+      <td>ES0031406192246001HP</td>
+      <td>1156</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP EL PENEDES 22 PK</td>
+      <td>2.0TD</td>
+      <td>ES0031406183558002PY</td>
+      <td>10711</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP NOSTRA SRA DEL MIG ARAN</td>
+      <td>2.0TD</td>
+      <td>ES0031406183848001NK</td>
+      <td>2591</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP NOSTRA SRA DEL MIG ARAN</td>
+      <td>2.0TD</td>
+      <td>ES0031406183848008JM</td>
+      <td>185</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP UNIO 19</td>
+      <td>2.0TD</td>
+      <td>ES0031406178595001BZ</td>
+      <td>3206</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>asesorenergetico.gnf@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP XAVIER ANDREU 28</td>
+      <td>2.0TD</td>
+      <td>ES0031406183484003XK</td>
+      <td>860</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP PRATS DE LA CASA</td>
+      <td>2.0TD</td>
+      <td>ES0031405753469005SS</td>
+      <td>5</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP PRATS DE LA CASA</td>
+      <td>2.0TD</td>
+      <td>ES0031405935504002GV</td>
+      <td>4</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ED ARTIES I</td>
+      <td>2.0TD</td>
+      <td>ES0031405935924004AQ</td>
+      <td>783</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP DE LA AV ALCALDE ARENY</td>
+      <td>2.0TD</td>
+      <td>ES0031405941555008VE</td>
+      <td>4398</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP PK TARRAGONA</td>
+      <td>2.0TD</td>
+      <td>ES0031406238008003DZ</td>
+      <td>348</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP PK TARRAGONA</td>
+      <td>2.0TD</td>
+      <td>ES0031406238008006DV</td>
+      <td>3341</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP DE LA CL VIDAL I CODINA 15</td>
+      <td>2.0TD</td>
+      <td>ES0031406183844001TT</td>
+      <td>1929</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP DE LA CL VIDAL I CODINA 15</td>
+      <td>2.0TD</td>
+      <td>ES0031406183844003TW</td>
+      <td>1932</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ED ARTIES I</td>
+      <td>2.0TD</td>
+      <td>ES0031405938993010SV</td>
+      <td>1059</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ALBAGES 1</td>
+      <td>2.0TD</td>
+      <td>ES0031408067981020SL</td>
+      <td>616</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP MARES DE TREDOS</td>
+      <td>2.0TD</td>
+      <td>ES0031408199977002BJ</td>
+      <td>1186</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP SANTA CREU SALARDU 13</td>
+      <td>3.0TD</td>
+      <td>ES0031408268577003AF</td>
+      <td>13507</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+    <tr>
+      <td>CCPP ED ARTIES I</td>
+      <td>2.0TD</td>
+      <td>ES0031405938995008XZ</td>
+      <td>1249</td>
+      <td>EUFEMIO TRUJILLO SALIDO</td>
+      <td>JORDI BERENGUER</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>facturas@totserveiurgell.es</td>
+    </tr>
+  </tbody>
+</table>       
+                            </div>
+
+                            <p>Para poder realizar las recuperaciones hay dos opcioens que detallo a continuación</p>
+
+                                <p>- Desestimar el contrato que ha firmado en la otra comercializadora.</p>
+                                <p>- Que el cliente firme el anexo de reposición que adjunto. En caso de firmar la plantilla, se tendrá que enviar por correo a canales@alumbraenergia.es correctamente cumplimentada y firmada por el cliente.</p>
+
+                            <p>Tenemos de plazo 14 días para realizar las recuperaciones desde el día en el que se han dado de baja.</p>
+
+                            <p>Un saludo.</p>
+                            <a href="https://alumbraenergia.es/">
+                            <img src="cid:mi_imagen" alt="IMAGEN_ALUMBRA_CARMEN">
+                            </a>
+                        </body>
+                        </html>
+        

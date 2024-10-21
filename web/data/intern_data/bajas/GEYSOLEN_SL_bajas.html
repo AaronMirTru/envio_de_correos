@@ -1,0 +1,375 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>correo bajas y rechazos </title>
+                            
+        <style>
+            .table-container {
+                width: 100%;
+                height: 200px;
+                overflow-y: auto;
+                border: 1px solid #ccc;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+        
+                        </head>
+                        <body>
+                            <p>Buenas tardes,</p>
+                            <p>adjunto las bajas recibidas:</p>
+
+                            <div class="table_container">
+                                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>titular</th>
+      <th>contacto</th>
+      <th>cups</th>
+      <th>consumo_sips</th>
+      <th>canal</th>
+      <th>agente</th>
+      <th>fecha_activacion</th>
+      <th>fecha_de_baja</th>
+      <th>dias</th>
+      <th>motivo</th>
+      <th>contact_email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RUTH MARIA MUÑOZ TORRE</td>
+      <td>3.0TD</td>
+      <td>ES0021000015864422NP</td>
+      <td>16189</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-06-23 00:00:00</td>
+      <td>2023-06-23 00:00:00</td>
+      <td>160</td>
+      <td>NaN</td>
+      <td>ruthmunoz932@gmail.com</td>
+    </tr>
+    <tr>
+      <td>LIANJIE ZHOU</td>
+      <td>3.0TD</td>
+      <td>ES0021000000141273AG</td>
+      <td>24247</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-08-15 00:00:00</td>
+      <td>2023-08-15 00:00:00</td>
+      <td>14</td>
+      <td>NaN</td>
+      <td>lianjielimon@gmail.com</td>
+    </tr>
+    <tr>
+      <td>XABIER CUADRA GUTIERREZ</td>
+      <td>3.0TD</td>
+      <td>ES0021000009551653AA</td>
+      <td>50686</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-09-02 00:00:00</td>
+      <td>2023-09-02 00:00:00</td>
+      <td>363</td>
+      <td>NaN</td>
+      <td>xabi55@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>SUELY SILVA NEVES</td>
+      <td>3.0TD</td>
+      <td>ES0021000006767615FT</td>
+      <td>38951</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-09-29 00:00:00</td>
+      <td>2023-09-29 00:00:00</td>
+      <td>249</td>
+      <td>21 - EXISTENCIA DE CONTRATO PREVIO EN VIGOR EN UNA SALIDA DIRECTA A MERCADO LIBRE</td>
+      <td>GASTROBARVALDIZARBE@GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>SUELY SILVA NEVES</td>
+      <td>3.0TD</td>
+      <td>ES0021000006767615FT</td>
+      <td>38951</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-09-29 00:00:00</td>
+      <td>2023-09-29 00:00:00</td>
+      <td>249</td>
+      <td>57 - NECESIDAD DE CIE POR CAMBIO ACTIVIDAD</td>
+      <td>GASTROBARVALDIZARBE@GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>SUELY SILVA NEVES</td>
+      <td>3.0TD</td>
+      <td>ES0021000006767615FT</td>
+      <td>38951</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-09-29 00:00:00</td>
+      <td>2023-09-29 00:00:00</td>
+      <td>249</td>
+      <td>57 - necesidad de cie por cambio actividad</td>
+      <td>GASTROBARVALDIZARBE@GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>SUELY SILVA NEVES</td>
+      <td>3.0TD</td>
+      <td>ES0021000006767615FT</td>
+      <td>38951</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-09-29 00:00:00</td>
+      <td>2023-09-29 00:00:00</td>
+      <td>249</td>
+      <td>2 - INEXISTENCIA DE CONTRATO DE ATR PREVIO EN VIGOR</td>
+      <td>GASTROBARVALDIZARBE@GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>ANA SAN JUAN SAURA</td>
+      <td>3.0TD</td>
+      <td>ES0021000003238633YT</td>
+      <td>4788</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-10-19 00:00:00</td>
+      <td>2023-10-19 00:00:00</td>
+      <td>277</td>
+      <td>21 - EXISTENCIA DE CONTRATO PREVIO EN VIGOR EN UNA SALIDA DIRECTA A MERCADO LIBRE</td>
+      <td>mistic20@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>ANA SAN JUAN SAURA</td>
+      <td>3.0TD</td>
+      <td>ES0021000003238633YT</td>
+      <td>4788</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-10-19 00:00:00</td>
+      <td>2023-10-19 00:00:00</td>
+      <td>277</td>
+      <td>85 - Falta campo obligatorio xxxx""</td>
+      <td>mistic20@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>BARTOLOME RODRIGUEZ FIGUEROA</td>
+      <td>3.0TD</td>
+      <td>ES0021000000078512BX</td>
+      <td>39113</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-10-18 00:00:00</td>
+      <td>2023-10-18 00:00:00</td>
+      <td>328</td>
+      <td>NaN</td>
+      <td>bartolito.rf2016@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARCOS CADENAS SL</td>
+      <td>3.0TD</td>
+      <td>ES0031405525277010LJ</td>
+      <td>34872</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-11-02 00:00:00</td>
+      <td>2023-11-02 00:00:00</td>
+      <td>319</td>
+      <td>NaN</td>
+      <td>BIANCORESTDOC@GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>ROYAL MATARO SL</td>
+      <td>3.0TD</td>
+      <td>ES0031405002562016VQ</td>
+      <td>44815</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-11-07 00:00:00</td>
+      <td>2023-11-07 00:00:00</td>
+      <td>226</td>
+      <td>NaN</td>
+      <td>Bcn8228khan@gmail.com</td>
+    </tr>
+    <tr>
+      <td>RUSKAJA S.L</td>
+      <td>3.0TD</td>
+      <td>ES0021000006531107MR</td>
+      <td>64457</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-11-07 00:00:00</td>
+      <td>2023-11-07 00:00:00</td>
+      <td>212</td>
+      <td>NaN</td>
+      <td>murciaseguros@gmail.com</td>
+    </tr>
+    <tr>
+      <td>INANDANE SC</td>
+      <td>3.0TD</td>
+      <td>ES0021000000156484CN</td>
+      <td>16919</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-11-24 00:00:00</td>
+      <td>2023-11-24 00:00:00</td>
+      <td>285</td>
+      <td>NaN</td>
+      <td>yaneom@gmail.com</td>
+    </tr>
+    <tr>
+      <td>JONATAN SANCHEZ ONTAVILLA</td>
+      <td>3.0TD</td>
+      <td>ES0021000009395317JK</td>
+      <td>0</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-12-23 00:00:00</td>
+      <td>2023-12-23 00:00:00</td>
+      <td>122</td>
+      <td>NaN</td>
+      <td>johysanchezlopez@gmail.com</td>
+    </tr>
+    <tr>
+      <td>LIYANG BARCELONA S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031406374373001MJ</td>
+      <td>20718</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2023-12-30 00:00:00</td>
+      <td>2023-12-30 00:00:00</td>
+      <td>90</td>
+      <td>57 - âCambio de medida indirecta a directa (o viceversa),   necesario CIE posterior a la Ãºltima modificaciÃ³n tÃ©cnica en el suministroâ</td>
+      <td>jorgealvarez.consultoriaventas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>LIYANG BARCELONA S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031406374373001MJ</td>
+      <td>20718</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2024-05-07 00:00:00</td>
+      <td>2024-05-07 00:00:00</td>
+      <td>23</td>
+      <td>57 - âCambio de medida indirecta a directa (o viceversa),   necesario CIE posterior a la Ãºltima modificaciÃ³n tÃ©cnica en el suministroâ</td>
+      <td>jorgealvarez.consultoriaventas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>ESCUGOIKO SL</td>
+      <td>3.0TD</td>
+      <td>ES0021000000164989EF</td>
+      <td>57042</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2024-05-07 00:00:00</td>
+      <td>2024-05-07 00:00:00</td>
+      <td>162</td>
+      <td>NaN</td>
+      <td>escugoiko@gmail.com</td>
+    </tr>
+    <tr>
+      <td>RAUL GARCIA ORBEGOZO</td>
+      <td>2.0TD</td>
+      <td>ES0021000018705550YS</td>
+      <td>49808</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2024-06-06 00:00:00</td>
+      <td>2024-06-06 00:00:00</td>
+      <td>55</td>
+      <td>NaN</td>
+      <td>BARGAZTELUQUINTOREAL@GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>YENY PAOLA VELEZ RIVERA</td>
+      <td>3.0TD</td>
+      <td>ES0021000000115645SK</td>
+      <td>17309</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2024-06-12 00:00:00</td>
+      <td>2024-06-12 00:00:00</td>
+      <td>126</td>
+      <td>NaN</td>
+      <td>Ypvelez@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>CLUB DEPORTIVO F5 SPORT</td>
+      <td>3.0TD</td>
+      <td>ES0021000038537298DJ</td>
+      <td>68126</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2024-08-03 00:00:00</td>
+      <td>2024-08-03 00:00:00</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>f5clubdeportivoarena@gmail.com</td>
+    </tr>
+    <tr>
+      <td>ALMA DYNAMICA SL</td>
+      <td>3.0TD</td>
+      <td>ES0021000006714063RS</td>
+      <td>22846</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2024-08-01 00:00:00</td>
+      <td>2024-08-01 00:00:00</td>
+      <td>74</td>
+      <td>NaN</td>
+      <td>bargazteluquintoreal@gmail.com</td>
+    </tr>
+    <tr>
+      <td>MARIBEL GIL LOPEZ YUSMELY</td>
+      <td>3.0TD</td>
+      <td>ES0021000000050238RA</td>
+      <td>20006</td>
+      <td>GEYSOLEN SL</td>
+      <td>ANDONI GARCIA ANDRES</td>
+      <td>2024-10-08 00:00:00</td>
+      <td>2024-10-08 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>maribelgil1200@gmail.com</td>
+    </tr>
+  </tbody>
+</table>       
+                            </div>
+
+                            <p>Para poder realizar las recuperaciones hay dos opcioens que detallo a continuación</p>
+
+                                <p>- Desestimar el contrato que ha firmado en la otra comercializadora.</p>
+                                <p>- Que el cliente firme el anexo de reposición que adjunto. En caso de firmar la plantilla, se tendrá que enviar por correo a canales@alumbraenergia.es correctamente cumplimentada y firmada por el cliente.</p>
+
+                            <p>Tenemos de plazo 14 días para realizar las recuperaciones desde el día en el que se han dado de baja.</p>
+
+                            <p>Un saludo.</p>
+                            <a href="https://alumbraenergia.es/">
+                            <img src="cid:mi_imagen" alt="IMAGEN_ALUMBRA_CARMEN">
+                            </a>
+                        </body>
+                        </html>
+        

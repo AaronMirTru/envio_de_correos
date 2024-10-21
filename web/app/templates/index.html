@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>envio de correos</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/styles_index.css') }}">
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+    <div class="search-container">
+        <h1>envio de correos</h1>
+        <form action="/lanzamiento_correos" method="post">
+            <button type="submit" class="search-button" id="loadDataBtn">lanzamiento de correos</button>
+        </form>
+        {% if not results%}
+            <h3>
+        No se han enviado los correos aun  
+            </h3>
+        {% else %}
+            <h3>
+        se han enviado los correos  
+            </h3>
+        {% endif %}
+    </div>
+
+    <script>
+        document.getElementById('loadDataBtn').addEventListener('click', function() {
+            var loader = document.getElementById('loader');
+            var result = document.getElementById('result');
+
+            loader.style.display = 'block';
+            result.innerHTML = '';
+            setTimeout(function() {
+                loader.style.display = 'none';
+
+                result.innerHTML = '<p>Datos cargados correctamente.</p>';
+            }, 100); 
+        });
+    </script>
+</body>
+</html>

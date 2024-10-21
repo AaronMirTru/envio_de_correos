@@ -1,0 +1,336 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>correo bajas y rechazos </title>
+                            
+        <style>
+            .table-container {
+                width: 100%;
+                height: 200px;
+                overflow-y: auto;
+                border: 1px solid #ccc;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+        
+                        </head>
+                        <body>
+                            <p>Buenas tardes,</p>
+                            <p>adjunto las bajas recibidas:</p>
+
+                            <div class="table_container">
+                                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>titular</th>
+      <th>contacto</th>
+      <th>cups</th>
+      <th>consumo_sips</th>
+      <th>canal</th>
+      <th>agente</th>
+      <th>fecha_activacion</th>
+      <th>fecha_de_baja</th>
+      <th>dias</th>
+      <th>motivo</th>
+      <th>contact_email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER, S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0021000017322504LM</td>
+      <td>1406</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-05-16 00:00:00</td>
+      <td>2023-05-16 00:00:00</td>
+      <td>127</td>
+      <td>57 - Deben insertar todos los datos necesarios en la solicitud XML, según CIE.</td>
+      <td>jmfranco@gestaner.com</td>
+    </tr>
+    <tr>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER, S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0021000013007196PA</td>
+      <td>11387</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-06-07 00:00:00</td>
+      <td>2023-06-07 00:00:00</td>
+      <td>107</td>
+      <td>NaN</td>
+      <td>jmfranco@gestaner.com</td>
+    </tr>
+    <tr>
+      <td>MARIANO MARTINEZ HERNANDEZ</td>
+      <td>2.0TD</td>
+      <td>ES0021000006286720MN</td>
+      <td>1986</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-08-05 00:00:00</td>
+      <td>2023-08-05 00:00:00</td>
+      <td>48</td>
+      <td>NaN</td>
+      <td>marianomh51@yahoo.es</td>
+    </tr>
+    <tr>
+      <td>JOSEFA ALIAGA MEROÑO</td>
+      <td>2.0TD</td>
+      <td>ES0021000006517684LX</td>
+      <td>1553</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-28 00:00:00</td>
+      <td>2023-07-28 00:00:00</td>
+      <td>69</td>
+      <td>NaN</td>
+      <td>garsol57@gmail.com</td>
+    </tr>
+    <tr>
+      <td>JOSEFA ALIAGA MEROÑO</td>
+      <td>2.0TD</td>
+      <td>ES0021000006289456DB</td>
+      <td>5300</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-28 00:00:00</td>
+      <td>2023-07-28 00:00:00</td>
+      <td>69</td>
+      <td>NaN</td>
+      <td>garsol57@gmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>6.1TD</td>
+      <td>ES0021000005954730SG</td>
+      <td>10821</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>NaN</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>6.1TD</td>
+      <td>ES0021000006042105LW</td>
+      <td>340276</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>17 - TARIFA NO VALIDA PARA LA TENSION DE SUMINISTRO | 53 - NECESIDAD DE ABRIR EXPEDIENTE DE ACOMETIDA</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>6.1TD</td>
+      <td>ES0021000006042105LW</td>
+      <td>340276</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>B1 - Falta documentación técnica de alta tensión</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>6.1TD</td>
+      <td>ES0021000005843362AW</td>
+      <td>1647785</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>NaN</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>6.1TD</td>
+      <td>ES0021000037180601VV</td>
+      <td>23161</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>NaN</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>3.0TD</td>
+      <td>ES0021000005954674NV</td>
+      <td>0</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>NaN</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>6.1TD</td>
+      <td>ES0021000013910088AF</td>
+      <td>4449</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>NaN</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>6.1TD</td>
+      <td>ES0021000010686398GC</td>
+      <td>126826</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>NaN</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>6.1TD</td>
+      <td>ES0021000006128563YA</td>
+      <td>33119</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>NaN</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>6.1TD</td>
+      <td>ES0021000006105875PQ</td>
+      <td>22357</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>NaN</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>6.1TD</td>
+      <td>ES0021000006128603FC</td>
+      <td>110601</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>NaN</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>AGRICOLA MINAMAR, S.A.</td>
+      <td>2.0TD</td>
+      <td>ES0021000006455873TT</td>
+      <td>43836</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>2023-07-29 00:00:00</td>
+      <td>365</td>
+      <td>57 - Falta documentación técnica de baja tensión</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>BIONUTRA, S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0021000010952845CN</td>
+      <td>14814</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2024-07-29 00:00:00</td>
+      <td>2024-07-29 00:00:00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>BIONUTRA, S.L.</td>
+      <td>6.1TD</td>
+      <td>ES0021000006045399RF</td>
+      <td>33882</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-08-01 00:00:00</td>
+      <td>2023-08-01 00:00:00</td>
+      <td>365</td>
+      <td>3 - NIF-CIF NO COINCIDE CON EL DEL CONTRATO EN VIGOR</td>
+      <td>bionutra_sl@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER, S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0021000040005206YS</td>
+      <td>5605</td>
+      <td>SISTEMAS DE CONTROL ENERGETICO GESTANER SL</td>
+      <td>JOSE MANUEL FRANCO</td>
+      <td>2023-09-01 00:00:00</td>
+      <td>2023-09-01 00:00:00</td>
+      <td>53</td>
+      <td>NaN</td>
+      <td>jmfranco@gestaner.com</td>
+    </tr>
+  </tbody>
+</table>       
+                            </div>
+
+                            <p>Para poder realizar las recuperaciones hay dos opcioens que detallo a continuación</p>
+
+                                <p>- Desestimar el contrato que ha firmado en la otra comercializadora.</p>
+                                <p>- Que el cliente firme el anexo de reposición que adjunto. En caso de firmar la plantilla, se tendrá que enviar por correo a canales@alumbraenergia.es correctamente cumplimentada y firmada por el cliente.</p>
+
+                            <p>Tenemos de plazo 14 días para realizar las recuperaciones desde el día en el que se han dado de baja.</p>
+
+                            <p>Un saludo.</p>
+                            <a href="https://alumbraenergia.es/">
+                            <img src="cid:mi_imagen" alt="IMAGEN_ALUMBRA_CARMEN">
+                            </a>
+                        </body>
+                        </html>
+        

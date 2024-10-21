@@ -1,0 +1,1207 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>correo bajas y rechazos </title>
+                            
+        <style>
+            .table-container {
+                width: 100%;
+                height: 200px;
+                overflow-y: auto;
+                border: 1px solid #ccc;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+        
+                        </head>
+                        <body>
+                            <p>Buenas tardes,</p>
+                            <p>adjunto las bajas recibidas:</p>
+
+                            <div class="table_container">
+                                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>titular</th>
+      <th>contacto</th>
+      <th>cups</th>
+      <th>consumo_sips</th>
+      <th>canal</th>
+      <th>agente</th>
+      <th>fecha_activacion</th>
+      <th>fecha_de_baja</th>
+      <th>dias</th>
+      <th>motivo</th>
+      <th>contact_email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JOAO MIGUEL CORREIRA PAGANI TOSCANO</td>
+      <td>2.0TD</td>
+      <td>ES0031104871890003ME</td>
+      <td>6012</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>carolina.alonso91@gmail.com</td>
+    </tr>
+    <tr>
+      <td>FRUVEDIS SL</td>
+      <td>3.0TD</td>
+      <td>ES0031104733665001PY</td>
+      <td>20099</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-01-03 00:00:00</td>
+      <td>2024-01-03 00:00:00</td>
+      <td>149</td>
+      <td>NaN</td>
+      <td>jacamps@fruvedis.com</td>
+    </tr>
+    <tr>
+      <td>FRUVEDIS SL</td>
+      <td>3.0TD</td>
+      <td>ES0031105186001001LC</td>
+      <td>5026</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-01-03 00:00:00</td>
+      <td>2024-01-03 00:00:00</td>
+      <td>144</td>
+      <td>NaN</td>
+      <td>jacamps@fruvedis.com</td>
+    </tr>
+    <tr>
+      <td>EMILIA QUILEZ ALVAREZ</td>
+      <td>3.0TD</td>
+      <td>ES0031101734052001DV</td>
+      <td>42584</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2023-12-22 00:00:00</td>
+      <td>2023-12-22 00:00:00</td>
+      <td>124</td>
+      <td>NaN</td>
+      <td>juanantoniohq@gmail.com</td>
+    </tr>
+    <tr>
+      <td>OUASSOU SAID</td>
+      <td>2.0TD</td>
+      <td>ES0031300024220015BN</td>
+      <td>0</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-02-15 00:00:00</td>
+      <td>2024-02-15 00:00:00</td>
+      <td>4</td>
+      <td>B7 - Existencia de Solicitud previa en curso B1 (motivo 03)</td>
+      <td>hassanmurco@gmail.com</td>
+    </tr>
+    <tr>
+      <td>OUASSOU SAID</td>
+      <td>2.0TD</td>
+      <td>ES0031300024220015BN</td>
+      <td>0</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-02-15 00:00:00</td>
+      <td>2024-02-15 00:00:00</td>
+      <td>4</td>
+      <td>B7 - Existencia de Solicitud previa en curso B1 (motivo 03)</td>
+      <td>hassanmurco@gmail.com</td>
+    </tr>
+    <tr>
+      <td>ESTACIONES DE SERVICIO MARQUEZ LAO S.L.U.</td>
+      <td>3.0TD</td>
+      <td>ES0031103682959001ZQ</td>
+      <td>64101</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-01-05 00:00:00</td>
+      <td>2024-01-05 00:00:00</td>
+      <td>123</td>
+      <td>31 - Impedimento del Titular</td>
+      <td>0008marquezlao@gmail.com</td>
+    </tr>
+    <tr>
+      <td>COMERCIAL PINAMAS SL</td>
+      <td>6.1TD</td>
+      <td>ES0031300848777001PY</td>
+      <td>820327</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-02-07 00:00:00</td>
+      <td>2024-02-07 00:00:00</td>
+      <td>147</td>
+      <td>46 - Fecha de la operaciÃ³n solicitada con carÃ¡cter retroactivo</td>
+      <td>ipueyo@copima.es</td>
+    </tr>
+    <tr>
+      <td>CASTLEGREEN SLU</td>
+      <td>3.0TD</td>
+      <td>ES0031104716244001DB</td>
+      <td>73498</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-01-16 00:00:00</td>
+      <td>2024-01-16 00:00:00</td>
+      <td>119</td>
+      <td>NaN</td>
+      <td>castlegreenslu@gmail.com</td>
+    </tr>
+    <tr>
+      <td>JOSE ANDRES OLIVENCIA FERNANDEZ</td>
+      <td>3.0TD</td>
+      <td>ES0031103669568001LF</td>
+      <td>8506</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-01-16 00:00:00</td>
+      <td>2024-01-16 00:00:00</td>
+      <td>80</td>
+      <td>NaN</td>
+      <td>victoriaolivenciaescamez@gmail.com</td>
+    </tr>
+    <tr>
+      <td>ARIDOS QUIBUS SL</td>
+      <td>3.0TD</td>
+      <td>ES0031406061389001RJ</td>
+      <td>63733</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-01-25 00:00:00</td>
+      <td>2024-01-25 00:00:00</td>
+      <td>222</td>
+      <td>NaN</td>
+      <td>aridosquibus@hotmail.es</td>
+    </tr>
+    <tr>
+      <td>CARLOS PAUL FORRADELLAS</td>
+      <td>2.0TD</td>
+      <td>ES0031406221509001PQ</td>
+      <td>924</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-02-08 00:00:00</td>
+      <td>2024-02-08 00:00:00</td>
+      <td>99</td>
+      <td>3 - NIF-CIF No coincide con el del Contrato en vigor</td>
+      <td>paulmzn@hotmail.com</td>
+    </tr>
+    <tr>
+      <td>DEXIBERICA SOLUCIONES INDUSTRIALES SAU</td>
+      <td>2.0TD</td>
+      <td>ES0116000000016344EG</td>
+      <td>1483</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-03-01 00:00:00</td>
+      <td>2024-03-01 00:00:00</td>
+      <td>229</td>
+      <td>NaN</td>
+      <td>servicios.generales@dexis-iberica.com</td>
+    </tr>
+    <tr>
+      <td>LLEIDA CAR SLU</td>
+      <td>3.0TD</td>
+      <td>ES0031408689000001ZW</td>
+      <td>0</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>5</td>
+      <td>57 - Falta documentaciÃ³n tÃ©cnica de baja tensiÃ³n.</td>
+      <td>mdoina@grupmibec.net</td>
+    </tr>
+    <tr>
+      <td>LLEIDA CAR SLU</td>
+      <td>3.0TD</td>
+      <td>ES0031408689000001ZW</td>
+      <td>0</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>5</td>
+      <td>57 - Falta documentaciÃ³n tÃ©cnica de baja tensiÃ³n.</td>
+      <td>mdoina@grupmibec.net</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405280151003SW</td>
+      <td>15567</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405280151003SW</td>
+      <td>15259</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405995428001WT</td>
+      <td>40496</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405995428001WT</td>
+      <td>39081</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405105083019YZ</td>
+      <td>88440</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405105083019YZ</td>
+      <td>39081</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405444762034ZX</td>
+      <td>17787</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405444762034ZX</td>
+      <td>17259</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405070940001QJ</td>
+      <td>14360</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405070940001QJ</td>
+      <td>17454</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031406299440003EA</td>
+      <td>15282</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031406299440003EA</td>
+      <td>15233</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405443531007NN</td>
+      <td>9883</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405830113001PF</td>
+      <td>24307</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405830113001PF</td>
+      <td>23151</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405993032002HA</td>
+      <td>19759</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405993032002HA</td>
+      <td>18193</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405650729004GW</td>
+      <td>25772</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405650729004GW</td>
+      <td>24892</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405082182001AG</td>
+      <td>34520</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405082182001AG</td>
+      <td>35735</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031408460347002FP</td>
+      <td>15294</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031408460347002FP</td>
+      <td>14912</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0031408352904015BA</td>
+      <td>10603</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0031405547118001AC</td>
+      <td>12153</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0031405547118001AC</td>
+      <td>11820</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-11 00:00:00</td>
+      <td>2024-09-11 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0031405464258001TG</td>
+      <td>19118</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0031405464258001TG</td>
+      <td>18812</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>CHORTAL</td>
+      <td>2.0TD</td>
+      <td>ES0031101802827001CA</td>
+      <td>7224</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>2024-05-10 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>CHORTAL</td>
+      <td>2.0TD</td>
+      <td>ES0031101802827001CA</td>
+      <td>7230</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0031405025738006QX</td>
+      <td>10717</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-11 00:00:00</td>
+      <td>2024-05-11 00:00:00</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0031405025738006QX</td>
+      <td>10717</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-11 00:00:00</td>
+      <td>2024-09-11 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>EL RATON DE ARMARIO SLU</td>
+      <td>3.0TD</td>
+      <td>ES0031406221863002JR</td>
+      <td>3079</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-05-31 00:00:00</td>
+      <td>2024-05-31 00:00:00</td>
+      <td>13</td>
+      <td>NaN</td>
+      <td>elratondearmario@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CESAR AUGUSTO 77</td>
+      <td>3.0TD</td>
+      <td>ES0031300506967002SE</td>
+      <td>2661</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CESAR AUGUSTO 77</td>
+      <td>3.0TD</td>
+      <td>ES0031300506967004QR</td>
+      <td>2859</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CESAR AUGUSTO 77</td>
+      <td>3.0TD</td>
+      <td>ES0031300506967001SK</td>
+      <td>1</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ARIAS 11-13</td>
+      <td>3.0TD</td>
+      <td>ES0031300013321027BB</td>
+      <td>572</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ARGUALAS</td>
+      <td>3.0TD</td>
+      <td>ES0031300048303001EC</td>
+      <td>926</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP LEON XIII</td>
+      <td>3.0TD</td>
+      <td>ES0031300020458004KL</td>
+      <td>8281</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP PS MARIA AGUSTIN 80-82</td>
+      <td>3.0TD</td>
+      <td>ES0031300026865078ZY</td>
+      <td>20953</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CONCEPCION 7</td>
+      <td>3.0TD</td>
+      <td>ES0031300554969004QN</td>
+      <td>7287</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP ANDRES GURPIDE 6</td>
+      <td>3.0TD</td>
+      <td>ES0031300012295001KS</td>
+      <td>3899</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP VIOLANTE DE HUNGRIA 5</td>
+      <td>3.0TD</td>
+      <td>ES0031300025459051QS</td>
+      <td>32968</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP SAN JORGE 1</td>
+      <td>3.0TD</td>
+      <td>ES0031300023935002QS</td>
+      <td>32406</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>3 - NIF-CIF No coincide con el del Contrato en vigor</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EL ESTANCHO PANTICOSA</td>
+      <td>3.0TD</td>
+      <td>ES0282000000001731BS</td>
+      <td>27388</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-07-27 00:00:00</td>
+      <td>2024-07-27 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EL ESTANCHO PANTICOSA</td>
+      <td>3.0TD</td>
+      <td>ES0282000000001733BV</td>
+      <td>3604</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-07-01 00:00:00</td>
+      <td>2024-07-01 00:00:00</td>
+      <td>30</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP EL ESTANCHO PANTICOSA</td>
+      <td>3.0TD</td>
+      <td>ES0282000000001726BX</td>
+      <td>1821</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-07-01 00:00:00</td>
+      <td>2024-07-01 00:00:00</td>
+      <td>30</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP SANCHO RAMIREZ 13</td>
+      <td>3.0TD</td>
+      <td>ES0031300024431001FL</td>
+      <td>20591</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP MARIANO ROYO 5-7</td>
+      <td>3.0TD</td>
+      <td>ES0031300045482058DG</td>
+      <td>3727</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CP NAV EMPRESARIUM SALVIA 1</td>
+      <td>3.0TD</td>
+      <td>ES0031300655634001QN</td>
+      <td>18937</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CP CENTRO COMERCIAL LAS FUENTES</td>
+      <td>3.0TD</td>
+      <td>ES0031300013676052ZP</td>
+      <td>77007</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CDAD. PROP. FRANCISCO VITORIA 16-18</td>
+      <td>3.0TD</td>
+      <td>ES0031300033858002VX</td>
+      <td>29196</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-19 00:00:00</td>
+      <td>2024-06-19 00:00:00</td>
+      <td>12</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP LAUREL 3-5</td>
+      <td>3.0TD</td>
+      <td>ES0031300033351001FK</td>
+      <td>1517</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>CCPP CESAR AUGUSTO 10</td>
+      <td>3.0TD</td>
+      <td>ES0031300661437002XK</td>
+      <td>7563</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>2024-06-25 00:00:00</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>comunidadesyfincas@gmail.com</td>
+    </tr>
+    <tr>
+      <td>TUBERIAS Y MONTAJES DEL CINCA SLU</td>
+      <td>3.0TD</td>
+      <td>ES0031300670282001QW</td>
+      <td>34749</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-03 00:00:00</td>
+      <td>2024-09-03 00:00:00</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>administracion@tuberiasdelcinca.com</td>
+    </tr>
+    <tr>
+      <td>ANA RODRIGUEZ SARASA</td>
+      <td>2.0TD</td>
+      <td>ES0031300023474006YP</td>
+      <td>5232</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-13 00:00:00</td>
+      <td>2024-09-13 00:00:00</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>sergioesteban@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SIDERURGICOS BARBASTRO SL</td>
+      <td>3.0TD</td>
+      <td>ES0031300568330001HX</td>
+      <td>17114</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>administracion@siderurgicos.es</td>
+    </tr>
+    <tr>
+      <td>SIDERURGICOS BARBASTRO SL</td>
+      <td>3.0TD</td>
+      <td>ES0031406194000001BM</td>
+      <td>31886</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>administracion@siderurgicos.es</td>
+    </tr>
+    <tr>
+      <td>INSOF 1414 SL</td>
+      <td>3.0TD</td>
+      <td>ES0031405991973004CV</td>
+      <td>18979</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031406232959001EH</td>
+      <td>27325</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031405496648001VR</td>
+      <td>32624</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>FINCA LA CRISTALINA SL</td>
+      <td>3.0TD</td>
+      <td>ES0031101778258001ZV</td>
+      <td>182145</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>ARFIS BALTIC S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031446439293002WW</td>
+      <td>32773</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>ARFIS BALTIC S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031408039408002DQ</td>
+      <td>22986</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOINZA 2023, S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031101826635004NQ</td>
+      <td>1</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOINZA 2023, S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0031405082293001EY</td>
+      <td>0</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOINZA 2023, S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0031405466639012ED</td>
+      <td>1919</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>SOINZA 2023, S.L.</td>
+      <td>2.0TD</td>
+      <td>ES0031405466639013EX</td>
+      <td>1919</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>MABANTHUR SL</td>
+      <td>2.0TD</td>
+      <td>ES0031406271205012SL</td>
+      <td>1506</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>MABANTHUR SL</td>
+      <td>3.0TD</td>
+      <td>ES0031103028398001MH</td>
+      <td>10506</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>2024-09-10 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jjbielsa@aragonenergia.com</td>
+    </tr>
+    <tr>
+      <td>ARTICO MOBILIARIO SL</td>
+      <td>3.0TD</td>
+      <td>ES0021000005091910ZY</td>
+      <td>9694</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-09-14 00:00:00</td>
+      <td>2024-09-14 00:00:00</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>administraciom@articomobiliario.com</td>
+    </tr>
+    <tr>
+      <td>SOFIN 2013 S.L.</td>
+      <td>3.0TD</td>
+      <td>ES0031406305833001TJ</td>
+      <td>13</td>
+      <td>JORGE BIELSA VALVERDE</td>
+      <td>JORGE JOAQUIN BIELSA VALVERDE</td>
+      <td>2024-10-08 00:00:00</td>
+      <td>2024-10-08 00:00:00</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>jtaillefer@soinza.com</td>
+    </tr>
+  </tbody>
+</table>       
+                            </div>
+
+                            <p>Para poder realizar las recuperaciones hay dos opcioens que detallo a continuación</p>
+
+                                <p>- Desestimar el contrato que ha firmado en la otra comercializadora.</p>
+                                <p>- Que el cliente firme el anexo de reposición que adjunto. En caso de firmar la plantilla, se tendrá que enviar por correo a canales@alumbraenergia.es correctamente cumplimentada y firmada por el cliente.</p>
+
+                            <p>Tenemos de plazo 14 días para realizar las recuperaciones desde el día en el que se han dado de baja.</p>
+
+                            <p>Un saludo.</p>
+                            <a href="https://alumbraenergia.es/">
+                            <img src="cid:mi_imagen" alt="IMAGEN_ALUMBRA_CARMEN">
+                            </a>
+                        </body>
+                        </html>
+        

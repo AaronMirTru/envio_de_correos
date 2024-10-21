@@ -1,0 +1,427 @@
+
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>correo bajas y rechazos </title>
+                            
+        <style>
+            .table-container {
+                width: 100%;
+                height: 200px;
+                overflow-y: auto;
+                border: 1px solid #ccc;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            table, th, td {
+                border: 1px solid black;
+            }
+
+            th, td {
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+        
+                        </head>
+                        <body>
+                            <p>Buenas tardes,</p>
+                            <p>adjunto las bajas recibidas:</p>
+
+                            <div class="table_container">
+                                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>titular</th>
+      <th>contacto</th>
+      <th>cups</th>
+      <th>consumo_sips</th>
+      <th>canal</th>
+      <th>agente</th>
+      <th>fecha_activacion</th>
+      <th>fecha_de_baja</th>
+      <th>dias</th>
+      <th>motivo</th>
+      <th>contact_email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CARROCERIAS MONTECARLOS S.L.</td>
+      <td>6.1TD</td>
+      <td>ES0031607313996001LD</td>
+      <td>44341</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>inmavillaplana60@gmail.com</td>
+    </tr>
+    <tr>
+      <td>JESUS DAVID DIAZ GARCIA</td>
+      <td>3.0TD</td>
+      <td>ES0031607272644008QS</td>
+      <td>0</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>david.g@outlook.es</td>
+    </tr>
+    <tr>
+      <td>JESUS DAVID DIAZ GARCIA</td>
+      <td>2.0TD</td>
+      <td>ES0031607272644003QX</td>
+      <td>58</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-10-24 00:00:00</td>
+      <td>2023-10-24 00:00:00</td>
+      <td>-35</td>
+      <td>NaN</td>
+      <td>david.g@outlook.es</td>
+    </tr>
+    <tr>
+      <td>JESUS DAVID DIAZ GARCIA</td>
+      <td>2.0TD</td>
+      <td>ES0031607272644009QQ</td>
+      <td>56</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-10-28 00:00:00</td>
+      <td>2023-10-28 00:00:00</td>
+      <td>-39</td>
+      <td>NaN</td>
+      <td>david.g@outlook.es</td>
+    </tr>
+    <tr>
+      <td>MESON EL PICOTEO SL</td>
+      <td>3.0TD</td>
+      <td>ES0031607296940001CG</td>
+      <td>44677</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>info@dondemario.net</td>
+    </tr>
+    <tr>
+      <td>RESTAURANTE CORALES TENERIFE, SL</td>
+      <td>3.0TD</td>
+      <td>ES0031607530598003DV</td>
+      <td>19245</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>0000-00-00</td>
+      <td>0000-00-00</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>info@elcalderitodelaabuela.net</td>
+    </tr>
+    <tr>
+      <td>MARIA NURIA MORENO TOSTE</td>
+      <td>2.0TD</td>
+      <td>ES0031607552746001WG</td>
+      <td>889</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-03-25 00:00:00</td>
+      <td>2023-03-25 00:00:00</td>
+      <td>90</td>
+      <td>NaN</td>
+      <td>dreser73@yahoo.es</td>
+    </tr>
+    <tr>
+      <td>MIGUEL ANGEL PADRON HERNANDEZ</td>
+      <td>3.0TD</td>
+      <td>ES0031601350904006MR</td>
+      <td>1075</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-05-20 00:00:00</td>
+      <td>2023-05-20 00:00:00</td>
+      <td>422</td>
+      <td>14 - Potencia Solicitada mayor que la Potencia MÃ¡xima Autorizada en baja tensiÃ³n</td>
+      <td>flyingsuites.lapalma@gmail.com</td>
+    </tr>
+    <tr>
+      <td>JOSE LORENZO MESA SANFIEL</td>
+      <td>2.0TD</td>
+      <td>ES0031601025563001LE</td>
+      <td>2008</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-04-22 00:00:00</td>
+      <td>2023-04-22 00:00:00</td>
+      <td>452</td>
+      <td>NaN</td>
+      <td>lorenzomesa@yahoo.es</td>
+    </tr>
+    <tr>
+      <td>JOSE LORENZO MESA SANFIEL</td>
+      <td>2.0TD</td>
+      <td>ES0031601355145001MA</td>
+      <td>1790</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-05-04 00:00:00</td>
+      <td>2023-05-04 00:00:00</td>
+      <td>440</td>
+      <td>NaN</td>
+      <td>lorenzomesa@yahoo.es</td>
+    </tr>
+    <tr>
+      <td>MARCOS GORRIN LINARES, SL</td>
+      <td>2.0TD</td>
+      <td>ES0031607608726001DM</td>
+      <td>1061</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-06-10 00:00:00</td>
+      <td>2023-06-10 00:00:00</td>
+      <td>447</td>
+      <td>NaN</td>
+      <td>correo@marcosgorrin.es</td>
+    </tr>
+    <tr>
+      <td>BRAULIO DOMINGUEZ AFONSO</td>
+      <td>2.0TD</td>
+      <td>ES0031601150418001SM</td>
+      <td>2912</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-07-01 00:00:00</td>
+      <td>2023-07-01 00:00:00</td>
+      <td>212</td>
+      <td>NaN</td>
+      <td>BDOMINGUEZA2@GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>RAQUEL PEREZ MARTIN</td>
+      <td>2.0TD</td>
+      <td>ES0031607490199001HD</td>
+      <td>2630</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-06-23 00:00:00</td>
+      <td>2023-06-23 00:00:00</td>
+      <td>364</td>
+      <td>NaN</td>
+      <td>opticanaranja@yahoo.es</td>
+    </tr>
+    <tr>
+      <td>RAQUEL PEREZ MARTIN</td>
+      <td>2.0TD</td>
+      <td>ES0031601279148001JV</td>
+      <td>6277</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-06-23 00:00:00</td>
+      <td>2023-06-23 00:00:00</td>
+      <td>452</td>
+      <td>NaN</td>
+      <td>opticanaranja@yahoo.es</td>
+    </tr>
+    <tr>
+      <td>FARUK EL MAHI ETTAIBI</td>
+      <td>3.0TD</td>
+      <td>ES0401668611906003NP</td>
+      <td>32859</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-07-13 00:00:00</td>
+      <td>2023-07-13 00:00:00</td>
+      <td>96</td>
+      <td>NaN</td>
+      <td>FARUK_ELMAHI@HOTMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>SERVICIOS RESTAURACIÓN ZAHIRA S.L</td>
+      <td>2.0TD</td>
+      <td>ES0031607481026005NB</td>
+      <td>10280</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2024-04-19 00:00:00</td>
+      <td>2024-04-19 00:00:00</td>
+      <td>65</td>
+      <td>C7 - Impedimento del Titular. Iniciar si procede, el proceso de fraude.</td>
+      <td>padillarodrigueztania@gmail.com</td>
+    </tr>
+    <tr>
+      <td>SERVICIOS RESTAURACIÓN ZAHIRA S.L</td>
+      <td>2.0TD</td>
+      <td>ES0031607481026005NB</td>
+      <td>10280</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2024-04-19 00:00:00</td>
+      <td>2024-04-19 00:00:00</td>
+      <td>65</td>
+      <td>A4 - Rechazo a solicitud de la comercializadora</td>
+      <td>padillarodrigueztania@gmail.com</td>
+    </tr>
+    <tr>
+      <td>GOMERALIA CATERING</td>
+      <td>3.0TD</td>
+      <td>ES0031607581164003FB</td>
+      <td>70694</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-07-21 00:00:00</td>
+      <td>2023-07-21 00:00:00</td>
+      <td>186</td>
+      <td>NaN</td>
+      <td>info@gomeralia.com</td>
+    </tr>
+    <tr>
+      <td>DISPA CEDRES SL</td>
+      <td>3.0TD</td>
+      <td>ES0031607516259001NC</td>
+      <td>389498</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2023-07-21 00:00:00</td>
+      <td>2023-07-21 00:00:00</td>
+      <td>84</td>
+      <td>NaN</td>
+      <td>oscarcabeza@dispacedres.com</td>
+    </tr>
+    <tr>
+      <td>JULIO CESAR MARTIN PERAZA</td>
+      <td>2.0TD</td>
+      <td>ES0031607593106001EH</td>
+      <td>8105</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2024-11-17 00:00:00</td>
+      <td>2024-11-17 00:00:00</td>
+      <td>-38</td>
+      <td>NaN</td>
+      <td>anabel@solmservicios.es</td>
+    </tr>
+    <tr>
+      <td>EMA MARIVEL ESTACIO SALAZAR</td>
+      <td>2.0TD</td>
+      <td>ES0031607279005002YZ</td>
+      <td>5902</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2024-10-21 00:00:00</td>
+      <td>2024-10-21 00:00:00</td>
+      <td>-46</td>
+      <td>NaN</td>
+      <td>2018.anabel.perez@gmail.com</td>
+    </tr>
+    <tr>
+      <td>EMA MARIVEL ESTACIO SALAZAR</td>
+      <td>2.0TD</td>
+      <td>ES0031607568753014WY</td>
+      <td>15664</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>2024-04-10 00:00:00</td>
+      <td>148</td>
+      <td>NaN</td>
+      <td>ANABEL@SOLMSERVICIOS.ES</td>
+    </tr>
+    <tr>
+      <td>JARDIN DE INES SOCIEDAD CIVIL</td>
+      <td>2.0TD</td>
+      <td>ES0401668611757012CB</td>
+      <td>18239</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2024-05-03 00:00:00</td>
+      <td>2024-05-03 00:00:00</td>
+      <td>142</td>
+      <td>NaN</td>
+      <td>JARDIN2020INES@GMAIL.COM</td>
+    </tr>
+    <tr>
+      <td>RESTAURANTE PUNTA BRAVA,SOCIEDAD CIVIL</td>
+      <td>2.0TD</td>
+      <td>ES0401668615424001HH</td>
+      <td>22491</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2024-04-30 00:00:00</td>
+      <td>2024-04-30 00:00:00</td>
+      <td>100</td>
+      <td>NaN</td>
+      <td>pedroaglez@gmail.com</td>
+    </tr>
+    <tr>
+      <td>RESTAURANTE PUNTA BRAVA,SOCIEDAD CIVIL</td>
+      <td>2.0TD</td>
+      <td>ES0401668615424002HL</td>
+      <td>4231</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2024-04-30 00:00:00</td>
+      <td>2024-04-30 00:00:00</td>
+      <td>91</td>
+      <td>NaN</td>
+      <td>pedroaglez@gmail.com</td>
+    </tr>
+    <tr>
+      <td>RESTAURANTE PUNTA BRAVA,SOCIEDAD CIVIL</td>
+      <td>2.0TD</td>
+      <td>ES0401668615424003HC</td>
+      <td>0</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2024-04-30 00:00:00</td>
+      <td>2024-04-30 00:00:00</td>
+      <td>91</td>
+      <td>NaN</td>
+      <td>pedroaglez@gmail.com</td>
+    </tr>
+    <tr>
+      <td>PEDRO MARTIN PEREZ</td>
+      <td>2.0TD</td>
+      <td>ES0031607590573001QP</td>
+      <td>5685</td>
+      <td>ANABEL PEREZ ESCALANTE</td>
+      <td>Anabel Pérez Escalante</td>
+      <td>2024-05-25 00:00:00</td>
+      <td>2024-05-25 00:00:00</td>
+      <td>138</td>
+      <td>NaN</td>
+      <td>anabel@solmservicios.es</td>
+    </tr>
+  </tbody>
+</table>       
+                            </div>
+
+                            <p>Para poder realizar las recuperaciones hay dos opcioens que detallo a continuación</p>
+
+                                <p>- Desestimar el contrato que ha firmado en la otra comercializadora.</p>
+                                <p>- Que el cliente firme el anexo de reposición que adjunto. En caso de firmar la plantilla, se tendrá que enviar por correo a canales@alumbraenergia.es correctamente cumplimentada y firmada por el cliente.</p>
+
+                            <p>Tenemos de plazo 14 días para realizar las recuperaciones desde el día en el que se han dado de baja.</p>
+
+                            <p>Un saludo.</p>
+                            <a href="https://alumbraenergia.es/">
+                            <img src="cid:mi_imagen" alt="IMAGEN_ALUMBRA_CARMEN">
+                            </a>
+                        </body>
+                        </html>
+        
