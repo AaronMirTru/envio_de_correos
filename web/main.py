@@ -1,16 +1,18 @@
-from fastapi import FastAPI, Request, File, Form
+from fastapi import FastAPI, Request, Form
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from passlib.context import CryptContext
+from datetime import datetime
+
+from dotenv import load_dotenv
+
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from fastapi.templating import Jinja2Templates
 from email.mime.image import MIMEImage
-from fastapi.responses import HTMLResponse
-from dotenv import load_dotenv
-from datetime import datetime
-from fastapi.staticfiles import StaticFiles
-from passlib.context import CryptContext
 
-import pandas as pd 
 import smtplib
+import pandas as pd 
 import os 
 
 app = FastAPI()
@@ -21,6 +23,12 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 static_path = os.path.join(os.path.dirname(__file__), 'app\\static\\')
 app.mount('/static', StaticFiles(directory=static_path), 'static')
 
+# Correo_copias = 'Canales@alumbraenergia.es, comercial@isofase.es' # testing
+# Correo_copias = 'Canales@alumbraenergia.es, F.nieto@alumbraenergia.es ' # end
+
+Correo_copias = 'aaron.mir@alumbraenergia.es; aaron.mir@donvatio.es;'
+
+# brian@donvatio.es
 @app.get("/", response_class=HTMLResponse)
 async def login_form(request: Request):
     return templates.TemplateResponse("login.html", {"request": request})
@@ -70,7 +78,7 @@ async def root(request: Request):
 
             th, td {
                 padding: 8px;
-                text-align: left;
+                text-align: left;a
             }
 
             th {
@@ -96,7 +104,11 @@ async def root(request: Request):
 
     bajas = pd.merge(bajas, datos_motivos, how='left', left_on='__cups__', right_on='cups')
         
+    email_csv = pd.read_csv(r'.\\data\\intern_data\\mails y canales.csv', sep=';')
     
+    email_csv = email_csv.dropna(subset=["CANAL"])
+    
+
     # iterar por cada uno de los resultados recogiendo la informacion
     x = 0
     tabla_de_bajas = pd.DataFrame(
@@ -110,8 +122,7 @@ async def root(request: Request):
                         'fecha_activacion', 
                         'fecha_de_baja', 
                         'dias', 
-                        'motivo', 
-                        'contact_email'
+                        'motivo'
                     ]
             )
 
@@ -132,7 +143,8 @@ async def root(request: Request):
         else :
             diferencia = fecha_de_baja - fecha_activacion
             diferencia = diferencia.days
-
+            
+        
         tabla_de_bajas.loc[x,'titular'] = row['customerName']
         tabla_de_bajas.loc[x,'contacto'] = row['tariff_name']
         tabla_de_bajas.loc[x,'cups'] = row['__cups__']
@@ -143,7 +155,6 @@ async def root(request: Request):
         tabla_de_bajas.loc[x,'fecha_de_baja'] = fecha_activacion
         tabla_de_bajas.loc[x,'dias'] = diferencia
         tabla_de_bajas.loc[x,'motivo'] = row['Rechazo']
-        tabla_de_bajas.loc[x,'contact_email'] = row['contact_email']
 
         x = x + 1
 
@@ -154,9 +165,8 @@ async def root(request: Request):
                 'cups', 
                 'proceso', 
                 'canal', 
-                'motivo', 
-                'contact_email'
-                ]
+                'motivo'
+            ]
         )
 
     x = 0
@@ -169,7 +179,6 @@ async def root(request: Request):
         tabla_de_rechazos.loc[x,'proceso'] = 'None'
         tabla_de_rechazos.loc[x,'canal'] = row['agent_number']
         tabla_de_rechazos.loc[x,'motivo'] = 'None'
-        tabla_de_rechazos.loc[x,'contact_email'] = row['contact_email']
 
         x = x + 1
 
@@ -178,19 +187,27 @@ async def root(request: Request):
 
 
     for (canal, agente), baja in agrupdado_bajas_canal_agente:
-        # agrupacion de los correos que se envian 
-        grupo_correo = baja.groupby(['contact_email'])
+        
+        email1 = email_csv.loc[email_csv["CANAL"] == canal]["MAIL 1"].values
+        email2 = email_csv.loc[email_csv["CANAL"] == canal]["MAIL 2"].values
+        
+        if len(email1): 
+            email1 = str(email1[0])
+            if email1 == 'nan':
+                email1 = ''
 
-        # recogida de los correos dependiendo del canal 
-
-
+        if len(email2):
+            email2 = str(email2[0])
+            if email2 == 'nan': 
+                email2 = ''
+        
+        listado_correos = email1 + ";" + email2
+        
         rechazo = pd.DataFrame(tabla_de_rechazos.loc[(tabla_de_rechazos['canal'] == canal) & (tabla_de_rechazos['cups'].isin(baja['cups']))])
 
-        baja = baja.drop('contact_email', axis=1)
-        rechazo = rechazo.drop('contact_email', axis=1)
-        
         # en el caso de que el elemento se este enviando con la relacion, solamente se tiene que reenviar con la condicion de que los elementos sean los mismos 
         #  entonces de la condicion anterior, se tiene que establecer
+        
         if not rechazo.empty:
             # genera los datos de las tablas html 
             tabla_html_bajas = baja.to_html(index=False)
@@ -200,12 +217,16 @@ async def root(request: Request):
                         <!DOCTYPE html>
                         <html lang="en">
                         <head>
-                            <meta charset="UTF-8">
+                            <meta charset="UTF-8">a
                             <meta name="viewport" content="width=device-width, initial-scale=1.0">
                             <title>correo bajas y rechazos </title>
                             {estilos}
                         </head>
                         <body>
+                        
+                            <p>correos a los que se envia</p>
+                            <p>{listado_correos}</p>
+                            
                             <p>Buenas tardes,</p>
                             <p>adjunto las bajas recibidas:</p>
 
@@ -246,13 +267,13 @@ async def root(request: Request):
             with open(rf"data/intern_data/bajas_y_rechazos/{str(canal).replace(' ', '_')}_bajas_y_rechazos.html", "w", encoding="utf-8") as file:
                 file.write(mensaje_html)
                 # Datos del correo
-                # email_recipient = 'c.revidiego@alumbraenergia.es'
-                email_recipient = 'aaron.mir@alumbraenergia.es'
+                # email_recipient = listado_correos
+                email_recipient = Correo_copias + 'aaron.mir@alumbraenerga.onmicrosoft.com' 
                 # email_recipient = listado_correos
                 subject = 'envio bajas y rechazos'
                 body = mensaje_html
 
-                # Crear el mensajeeeeeee
+                # Crear el mensaje
                 message = MIMEMultipart()
                 
                  # generacion de los datos para poder asignar una imagen 
@@ -265,6 +286,7 @@ async def root(request: Request):
                 message['From'] = email_sender
                 message['To'] = email_recipient
                 message['Subject'] = subject
+                message['CC'] = Correo_copias
 
                 # Adjuntar el cuerpo del correo
                 message.attach(MIMEText(body, 'html'))
@@ -286,7 +308,21 @@ async def root(request: Request):
 
     agrupdado_bajas_2_canal_agente = tabla_de_bajas.groupby(['canal', 'agente'])
     for (canal, agente), bajas in agrupdado_bajas_canal_agente:
+        email1 = email_csv.loc[email_csv["CANAL"] == canal]["MAIL 1"].values
+        email2 = email_csv.loc[email_csv["CANAL"] == canal]["MAIL 2"].values
+            
+        if len(email1): 
+            email1 = str(email1[0])
+            if email1 == 'nan':
+                email1 = ''
+
+        if len(email2):
+            email2 = str(email2[0])
+            if email2 == 'nan': 
+                email2 = ''
         
+        listado_correos = email1 + ";" + email2
+
         # recogida de los correos a los que se envia 
 
         # generacion de los elementos que se meten dentro del html que se envia 
@@ -303,6 +339,10 @@ async def root(request: Request):
                             {estilos}
                         </head>
                         <body>
+
+                            <p>correos a los que se envia</p>
+                            <p>{listado_correos}</p>
+                            
                             <p>Buenas tardes,</p>
                             <p>adjunto las bajas recibidas:</p>
 
@@ -329,7 +369,7 @@ async def root(request: Request):
         with open(rf"data/intern_data/bajas/{str(canal).replace(' ', '_')}_bajas.html", "w", encoding="utf-8") as file:
                 file.write(mensaje_html)
                 # Datos del correo
-                # email_recipient = 'aaron.mir@alumbraenergia.es'
+                # email_recipient = Correo_copias + 'aaron.mir@alumbraenerga.onmicrosoft.com' 
                 # # email_recipient = listado_correos
                 # subject = 'envio bajas'
                 # body = mensaje_html
@@ -346,6 +386,8 @@ async def root(request: Request):
                 # message['From'] = email_sender
                 # message['To'] = email_recipient
                 # message['Subject'] = subject
+                # message['Cc'] = Correo_copias
+                
 
                 # # Adjuntar el cuerpo del correo
                 # message.attach(MIMEText(body, 'html'))
@@ -367,6 +409,22 @@ async def root(request: Request):
     agrupdado_rechazos_2_canal_agente = tabla_de_rechazos.groupby(['canal'])
 
     for canal, rechazos in agrupdado_rechazos_2_canal_agente:
+        email1 = email_csv.loc[email_csv["CANAL"] == canal]["MAIL 1"].values
+        email2 = email_csv.loc[email_csv["CANAL"] == canal]["MAIL 2"].values
+            
+        if len(email1): 
+            email1 = str(email1[0])
+            if email1 == 'nan':
+                email1 = ''
+
+        if len(email2):
+            email2 = str(email2[0])
+            if email2 == 'nan': 
+                email2 = ''
+
+        listado_correos = email1 + ";" + email2
+        
+        # print(listado_correos)
 
         # generacion dfel listado de los rechazos  
         tabla_html_rechazos = rechazos.to_html(index=False)
@@ -383,8 +441,11 @@ async def root(request: Request):
                     {estilos}
                 </head>
                 <body>
+                
+                    <p>correos a los que se envia</p>
+                    <p>{listado_correos}</p>
+                            
                     <p>Buenas tardes,</p>
-
                     <p>Para poder realizar las recuperaciones hay dos opcioens que detallo a continuación</p>
 
                         <p>- Desestimar el contrato que ha firmado en la otra comercializadora.</p>
@@ -413,8 +474,8 @@ async def root(request: Request):
         # envio de correos viene en esta zona 
         with open(rf"data/intern_data/rechazos/{str(canal).replace(' ', '_')}_rechazos.html", "w", encoding="utf-8") as file:
                 file.write(mensaje_html)
-                # Datos del correo
-                # email_recipient = 'aaron.mir@alumbraenergia.es'
+                # # Datos del correo
+                # email_recipient = Correo_copias + 'aaron.mir@alumbraenerga.onmicrosoft.com' 
                 # # email_recipient = listado_correos
                 # subject = 'envio rechazos'
                 # body = mensaje_html
@@ -431,6 +492,8 @@ async def root(request: Request):
                 # message['From'] = email_sender
                 # message['To'] = email_recipient
                 # message['Subject'] = subject
+                # message['Cc'] = Correo_copias
+                
 
                 # # Adjuntar el cuerpo del correo
                 # message.attach(MIMEText(body, 'html'))
@@ -445,6 +508,6 @@ async def root(request: Request):
                 #     server.quit()
                 #     print('Correo enviado exitosamente.')
                 # except Exception as e:
-                #     print(f'Error al enviar correo: {e}')    
+                #     print(f'Error al enviar correo: {e}')
             
     return templates.TemplateResponse("index.html", {"request": request, "results": True})
